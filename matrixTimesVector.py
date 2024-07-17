@@ -1,3 +1,11 @@
+# Write a Python function that takes the dot product of a matrix and a vector. return -1 if the matrix could not be dotted with the vector
+
+# Example:
+#         input: a = [[1,2],[2,4]], b = [1,2]
+#         output:[5, 10] 
+#         Reasoning: 1*1 + 2*2 = 5;
+#                    1*2+ 2*4 = 10
+
 def matrix_dot_vector(a:list[list[int|float]] , b:list[int|float])-> list[int|float]:
   #a -> input
   #b -> multiplier
@@ -16,4 +24,5 @@ def matrix_dot_vector(a:list[list[int|float]] , b:list[int|float])-> list[int|fl
   return c
     
     
-print(matrix_dot_vector([[1,2,3],[2,4,5],[6,8,9]],[1,2,3]))
+print(matrix_dot_vector([[1,2,3],[2,4,5],[6,8,9]],[1,2,3])) #Expected OP - [14, 25, 49]
+print(matrix_dot_vector([[1,2],[2,4],[6,8],[12,4]],[1,2,3])) #Expected OP - -1
